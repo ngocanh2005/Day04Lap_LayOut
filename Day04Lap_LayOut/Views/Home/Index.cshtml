@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Day04Lap_LayOut.Models.Student
+<h1>Welcome to PNA_LAYOUT4 Admin Index</h1>
+<h3> Thong tin sinh vien</h3>
+@if (Model != null && Model.Id != 0)
+{
+    <ul>
+        <li><strong>Ma Sinh Vien:</strong> @Model.Id</li>
+        <li><strong>Ho Ten:</strong> @Model.Name</li>
+        <li><strong>Tuoi:</strong> @Model.Age</li>
+        <li><strong>Lop:</strong> @Model.Class</li>
+    </ul>
+}
+else
+{
+    <p>Khong co thong tin sinh vien nao</p>
+
+}

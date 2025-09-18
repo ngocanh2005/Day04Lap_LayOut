@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@model Day04Lap_LayOut.Models.Student
+<<h1>Privacy</h1>
+<h2>Nhap Thong tin Sinh Vien</h2>
+<form asp-action="Privacy" method="post">
+    <div class="mb-3">
+        <label asp-for="Id" class="form-label"></label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name" class=" form-label">Ho Ten</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label">Tuoi</label>
+        <input asp-for="Age" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Class" class="form-label">Lop</label>
+        <input asp-for="Class" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
